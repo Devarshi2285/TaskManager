@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import CreateTeam from './CreateTeam';
 import JoinTeam from './JoinTeam';
 import customFetch from '../../fetchInstance';
+import addIcon from '../assets/img/add.png';
 import LeftNavbar from './LeftNavbar';
 function Teams() {
   const [employeeId, setEmployeeId] = useState();
@@ -103,7 +104,7 @@ function Teams() {
                   onClick={() => setShowPopup(true)}
                 >
                   <h1 className="font-semibold text-lg pr-2">Create Team</h1>
-                  <img className="w-5" src="src/assets/img/add.png" alt="Create Team" />
+                  <img className="w-5" src={addIcon} alt="Create Team" />
                 </div>
               </div>
               <div className="w-full pt-5">
