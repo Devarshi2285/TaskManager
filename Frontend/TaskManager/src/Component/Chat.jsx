@@ -153,7 +153,7 @@ function Chat() {
         receiverid: receiverid,
         commented: replyMessageId,
       };
-      const response = await fetch('http://localhost:3004/upload', {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_REQ_URI}/upload`, {
         method: 'POST',
         body: formData
       });
