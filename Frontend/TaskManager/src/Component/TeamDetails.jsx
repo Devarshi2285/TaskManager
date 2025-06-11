@@ -102,7 +102,7 @@ function TeamDetails() {
 
                   <div className="grid col-start-8 col-end-9 pt-6">
                     <div className="w-full rounded-xl bg-black text-white text-right p-2 grid grid-cols-3">
-                      <div className="grid col-span-1"><img className="w-5" src="\src\assets\img\output-onlinepngtools (2).png" alt="" /></div>
+                      <div className="grid col-span-1"><img className="w-5" src="/img/output-onlinepngtools (2).png" alt="" /></div>
                       <div className="grid col-2 pr-1"><p className="text-sm">TeamGoals</p></div>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ function TeamDetails() {
 
                   <div className="grid col-start-9 col-end-10 pt-6">
                     <div className="w-full rounded-xl bg-black text-white text-right p-2 grid grid-cols-3">
-                      <div className="grid col-span-1"><img className="w-5" src="\src\assets\img\output-onlinepngtools.png" alt="" /></div>
+                      <div className="grid col-span-1"><img className="w-5" src="/img/output-onlinepngtools.png" alt="" /></div>
                       <div className="grid col-2 pr-1"><a href={`/discussion/${id}`} className="text-sm">Discussion</a></div>
                     </div>
 
@@ -130,7 +130,7 @@ function TeamDetails() {
 
                     <div className="w-full grid grid-cols-6 gap-1 border-slate-200 border-2 p-3 rounded-2xl">
                       <div className="col-start-1 col-end-2">
-                        <img className="pt-2" src="\src\assets\img\profile-user.png" alt="" />
+                        <img className="pt-2" src="/img/profile-user.png" alt="" />
                       </div>
                       <div className="col-start-2 col-end-7 pl-2">
                         <div className="w-full">
@@ -154,7 +154,7 @@ function TeamDetails() {
                                 setAssignedTo(member.employee?._id);
                                 }} className="hover:cursor-pointer">
                                 <div className="w-full rounded-xl bg-black text-white p-2 grid grid-cols-3">
-                                  <div className="grid col-span-1"><img className="w-4 pt-1" src="\src\assets\img\output-onlinepngtools (1).png" alt="" /></div>
+                                  <div className="grid col-span-1"><img className="w-4 pt-1" src="/img/output-onlinepngtools (1).png" alt="" /></div>
                                   <div className="grid col-span-2 pr-1"><p className="text-sm">Assign Task</p></div>
                                 </div>
                               </div>
@@ -164,7 +164,7 @@ function TeamDetails() {
                             {member.employee?._id !== employeeId && (
                               <div className="hover:cursor-pointer">
                                 <div className="w-full rounded-xl bg-black text-white p-2 grid grid-cols-3">
-                                  <div className="grid col-span-1"><img className="w-4 pt-1" src="\src\assets\img\output-onlinepngtools.png" alt="" /></div>
+                                  <div className="grid col-span-1"><img className="w-4 pt-1" src="/img/output-onlinepngtools.png" alt="" /></div>
                                   <div className="grid col-span-2 pr-1"><a className="text-sm" href={`http://localhost:5173/chat/${member.employee?._id}`}>Message</a></div>
                                 </div>
                               </div>

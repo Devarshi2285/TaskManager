@@ -51,7 +51,7 @@ function Profile() {
                         <div className="col-span-3 grid grid-cols-3 gap-3 pr-2">
                             <div className="bg-white shadow-2xl p-6 rounded-xl">
                                 <div className="w-16 m-auto">
-                                    <img className="rounded-full" src="\src\assets\img\profile-user.png" alt="" />
+                                    <img className="rounded-full" src="/img/profile-user.png" alt="" />
                                 </div>
                                 <div className="w-full text-center pt-3">
                                     <h1 className="text-2xl font-semibold">{userdata?.name}</h1>

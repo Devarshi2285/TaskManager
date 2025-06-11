@@ -273,7 +273,7 @@ function Chat() {
                                 <img onClick={() => {
                                   setReplyMessage('');
                                   setReplyMessageId(null);
-                                }} className="w-4 hover:cursor-pointer" src="\src\assets\img\close.png" alt="" />
+                                }} className="w-4 hover:cursor-pointer" src="/img/close.png" alt="" />
                               </div>
                             </div>
                             <div className="w-full float-left">
@@ -296,7 +296,7 @@ function Chat() {
                                 <img onClick={() => {
                                   setFile(null);
                                   fileInputRef.current.value = null;
-                                }} className="w-4 hover:cursor-pointer" src="\src\assets\img\close.png" alt="" />
+                                }} className="w-4 hover:cursor-pointer" src="/img/close.png" alt="" />
                               </div>
                             </div>
                             <div className="w-full float-left">

@@ -210,7 +210,7 @@ const Discussion = () => {
               <div key={message._id} className={`flex ${message.creator._id === userId ? "justify-end" : "justify-start"} mb-4`}>
                 <div className="flex items-center">
                   {message.creator._id === userId && (
-                    <img src="\src\assets\img\reply.png" alt="Reply" className="w-5 ml-1 pl-1" onClick={() => handleReply(message)} />
+                    <img src="/img/reply.png" alt="Reply" className="w-5 ml-1 pl-1" onClick={() => handleReply(message)} />
                   )}
                 </div>
                 <div className={`p-2 rounded-lg ${message.creator._id === userId ? "bg-green-200" : "bg-gray-200"} }`} style={{ maxWidth: "45%" }}>
@@ -251,7 +251,7 @@ const Discussion = () => {
                 </div>
                 <div className="flex items-center">
                   {message.creator._id !== userId && (
-                    <img src="\src\assets\img\reply-2.png" alt="Reply" className="w-4 ml-1" onClick={() => handleReply(message)} />
+                    <img src="/img/reply-2.png" alt="Reply" className="w-4 ml-1" onClick={() => handleReply(message)} />
                   )}
                 </div>
               </div>
@@ -272,7 +272,7 @@ const Discussion = () => {
                         <img onClick={() => {
                           setReplyMessage('');
                           setReplyMessageId(null);
-                        }} className="w-4 hover:cursor-pointer" src="\src\assets\img\close.png" alt="" />
+                        }} className="w-4 hover:cursor-pointer" src="/img/close.png" alt="" />
                       </div>
                     </div>
                     <div className="w-full float-left">
@@ -295,7 +295,7 @@ const Discussion = () => {
                         <img onClick={() => {
                           setFile(null);
                           fileInputRef.current.value = null;
-                        }} className="w-4 hover:cursor-pointer" src="\src\assets\img\close.png" alt="" />
+                        }} className="w-4 hover:cursor-pointer" src="/img/close.png" alt="" />
                       </div>
                     </div>
                     <div className="w-full float-left">
@@ -330,7 +330,7 @@ const Discussion = () => {
                   />
                   <img
                     className="w-6 hover:cursor-pointer"
-                    src="\src\assets\img\attach-file.png"
+                    src="/img/attach-file.png"
                     alt="Attach File"
                   />
                 </label>
@@ -339,7 +339,7 @@ const Discussion = () => {
                 <img
                   onClick={sendMessage}
                   className="w-6 hover:cursor-pointer"
-                  src="\src\assets\img\send.png"
+                  src="/img/send.png"
                   alt="Send Message"
                 />
               </div>

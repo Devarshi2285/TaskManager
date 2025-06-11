@@ -210,7 +210,7 @@ function GetTask() {
 
                                                         <div className="grid col-start-5 col-end-6 pt-1">
                                                             <div className="flex items-center pl-6">
-                                                                <img className="w-5" src="\src\assets\img\output-onlinepngtools (3).png" alt="" />
+                                                                <img className="w-5" src="/img/output-onlinepngtools (3).png" alt="" />
                                                                 <span className="pl-1 text-slate-500 font-medium">{task.deadlineByDate.substring(0, 10)}</span>                                               </div>
                                                         </div>
                                                     </div>
@@ -223,11 +223,11 @@ function GetTask() {
 
                                                         <div className="grid grid-cols-2 gap-2">
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (4).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (4).png" alt="" />
                                                                 <h1 className="pl-7  text-slate-500 font-normal">Due in {task.deadlineByHours} hours</h1>
                                                             </div>
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (5).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (5).png" alt="" />
                                                                 <h1 className="pl-7 text-slate-500 font-normal">Given By {task.assignedBy?.name}</h1>
 
                                                             </div>
@@ -239,7 +239,7 @@ function GetTask() {
                                                         <div className="grid grid-cols-3 gap-2 border-t-2 border-slate-300">
 
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (6).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (6).png" alt="" />
                                                                 <h1 className="pl-7  text-slate-500 font-normal">{task.youWorkedFor.hours}hr {Math.floor(task.youWorkedFor.minutes)}m Worked</h1>
                                                             </div>
                                                             <div className="col-start-2 col-end-4">
@@ -249,7 +249,7 @@ function GetTask() {
 
                                                                         <div className="col-start-1 col-end-2 hover:bg-slate-100 hover:cursor-pointer" onClick={closeTask}>
 
-                                                                            <img className="w-4 pt-2 float-left pl-1" src="\src\assets\img\pause-button.png" alt="" />
+                                                                            <img className="w-4 pt-2 float-left pl-1" src="/img/pause-button.png" alt="" />
                                                                             <h1 className="pl-5 pb-1">Stop</h1>
 
                                                                         </div>
@@ -258,7 +258,7 @@ function GetTask() {
 
                                                                             <div className="col-start-1 col-end-2 hover:bg-slate-100 hover:cursor-pointer" onClick={() => startTask(task._id)}>
 
-                                                                                <img className="w-4 pt-2 float-left pl-1" src="\src\assets\img\play.png" alt="" />
+                                                                                <img className="w-4 pt-2 float-left pl-1" src="/img/play.png" alt="" />
                                                                                 <h1 className="pl-5 pb-1">Start</h1>
 
                                                                             </div>
@@ -267,13 +267,13 @@ function GetTask() {
 
                                                                     {task.status==='inProgress' && !task.requestedToMarkComplete && (
                                                                         <div className="col-start-2 col-end-4 hover:bg-slate-100 hover:cursor-pointer" onClick={() => changeToRequestedStatus(task._id)}>
-                                                                        <img className="w-8 float-left pt-1 pl-3" src="\src\assets\img\next.png" alt="" />
+                                                                        <img className="w-8 float-left pt-1 pl-3" src="/img/next.png" alt="" />
                                                                         <h1 className="text-green-600 pl-9">Complete</h1>
                                                                     </div>
                                                                     )}
                                                                     {task.status==='inProgress' && task.requestedToMarkComplete && (
                                                                         <div className="col-start-2 col-end-4 hover:bg-slate-100 hover:cursor-pointer" onClick={() => changeToRequestedStatus(task._id)}>
-                                                                        <img className="w-8 float-left pt-1 pl-3" src="\src\assets\img\output-onlinepngtools (7).png" alt="" />
+                                                                        <img className="w-8 float-left pt-1 pl-3" src="/img/output-onlinepngtools (7).png" alt="" />
                                                                         <h1 className="text-yellow-400 pl-9">Requested</h1>
                                                                     </div>
                                                                     )}
@@ -312,14 +312,14 @@ function GetTask() {
                                                         <div className="col-start-1 col-end-4">
                                                             <div className="w-full">
                                                                 <h1 className="text-xl float-left">{task.title}</h1>
-                                                                {task.isOnGoing && ( <img className="w-6 pt-2 pl-3" src="\src\assets\img\output-onlinepngtools (8).png" alt="" />)}
+                                                                {task.isOnGoing && ( <img className="w-6 pt-2 pl-3" src="/img/output-onlinepngtools (8).png" alt="" />)}
                                                                
                                                             </div>
                                                         </div>
 
                                                         <div className="grid col-start-5 col-end-6 pt-1">
                                                             <div className="flex items-center pl-6">
-                                                                <img className="w-5" src="\src\assets\img\output-onlinepngtools (3).png" alt="" />
+                                                                <img className="w-5" src="/img/output-onlinepngtools (3).png" alt="" />
                                                                 <span className="pl-1 text-slate-500 font-medium">{task.deadlineByDate.substring(0, 10)}</span>                                               </div>
                                                         </div>
                                                     </div>
@@ -332,11 +332,11 @@ function GetTask() {
 
                                                         <div className="grid grid-cols-2 gap-2">
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (4).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (4).png" alt="" />
                                                                 <h1 className="pl-7  text-slate-500 font-normal">Due in {task.deadlineByHours} hours</h1>
                                                             </div>
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (5).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (5).png" alt="" />
                                                                 <h1 className="pl-7 text-slate-500 font-normal">Given To {task.assignedTo?.name}</h1>
 
                                                             </div>
@@ -348,14 +348,14 @@ function GetTask() {
                                                         <div className="grid grid-cols-3 gap-2">
 
                                                             <div>
-                                                                <img className="w-5 pt-1 float-left" src="\src\assets\img\output-onlinepngtools (6).png" alt="" />
+                                                                <img className="w-5 pt-1 float-left" src="/img/output-onlinepngtools (6).png" alt="" />
                                                                 <h1 className="pl-7  text-slate-500 font-normal">{task.youWorkedFor.hours}hr {Math.floor(task.youWorkedFor.minutes)}m Worked</h1>
                                                             </div>
                                                             <div className="col-start-2 col-end-4">
                                                                 <div className="grid grid-cols-5 gap-2">
                                                                     {task.requestedToMarkComplete && task.status==='inProgress' && (
                                                                          <div className="col-start-1 col-end-4 hover:bg-slate-100 hover:cursor-pointer" onClick={() => changeToMarkComplete(task._id)}>
-                                                                         <img className="w-8 float-left pt-4 pl-3" src="\src\assets\img\next.png" alt="" />
+                                                                         <img className="w-8 float-left pt-4 pl-3" src="/img/next.png" alt="" />
                                                                          <h1 className="text-green-600 pl-9">Requested to mark Complete</h1>
                                                                      </div>
                                                                     ) 

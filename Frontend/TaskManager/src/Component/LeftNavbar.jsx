@@ -7,7 +7,7 @@ return(
 
                             <div className="w-full">
                                 <div className="p-5 w-20 float-left">
-                                    <img className="rounded-full" src="\src\assets\img\profile-user.png" alt="" />
+                                    <img className="rounded-full" src="/img/profile-user.png" alt="" />
                                 </div>
                                 <div className="pt-5">
                                     <a className="text-2xl font-bold hover:cursor-pointer" href={`/profile/${id}`}>{username}</a>
@@ -20,7 +20,7 @@ return(
                                         <div className="w-2/3 pl-7 pt-3 pb-3">
                                             <div className="w-full ">
                                                 <div className="w-1/6 float-left">
-                                                    <img src="\src\assets\img\people.png" alt="" />
+                                                    <img src="/img/people.png" alt="" />
                                                 </div>
                                                 <div className="pl-12">
                                                 
@@ -36,7 +36,7 @@ return(
                                         <div className="w-2/3 pl-7 pt-3 pb-3">
                                             <div className="w-full ">
                                                 <div className="w-1/6 float-left">
-                                                    <img src="\src\assets\img\task-list.png" alt="" />
+                                                    <img src="/img/task-list.png" alt="" />
                                                 </div>
                                                 <div className="pl-12">
                                                 <a href="/gettask" className={` ${on === "task" ? "text-xl" : "text-base"}`}>Task</a>

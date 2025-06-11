@@ -90,7 +90,7 @@ function Teams() {
                         </div>
                         <div className="w-1/6 float-left pt-5">
                           <a href={`teamdetails/${team._id}`}>
-                            <img className="w-3" src="src/assets/img/right-arrow.png" alt="" />
+                            <img className="w-3" src="/img/right-arrow.png" alt="" />
                           </a>
                         </div>
                       </div>
@@ -104,7 +104,7 @@ function Teams() {
                   onClick={() => setShowPopup(true)}
                 >
                   <h1 className="font-semibold text-lg pr-2">Create Team</h1>
-                  <img className="w-5" src={addIcon} alt="Create Team" />
+                  <img className="w-5" src="/img/add.png" alt="Create Team" />
                 </div>
               </div>
               <div className="w-full pt-5">
@@ -113,7 +113,7 @@ function Teams() {
                   onClick={() => setShowJoinPopup(true)}
                 >
                   <h1 className="font-semibold text-lg pr-2">Join Team</h1>
-                  <img className="w-5" src="src/assets/img/add.png" alt="Create Team" />
+                  <img className="w-5" src="/img/add.png" alt="Create Team" />
                 </div>
               </div>
             </div>
