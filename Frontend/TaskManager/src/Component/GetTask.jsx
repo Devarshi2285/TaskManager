@@ -126,7 +126,7 @@ function GetTask() {
         try {
             const hours = Math.floor(minutesWorked / 60); // Calculate hours
             const minutes = minutesWorked % 60; // Calculate remaining minutes
-            const res = await customFetch(`${import.meta.env.VITE_SERVER_REQ_URI}/auth/updateworkedtime`,{ taskid: onGoingTask, hoursWorked: hours, minutesWorked: minutes });
+            const res = await customFetch(`${import.meta.env.VITE_SERVER_REQ_URI}/task/updateworkedtime`,{ taskid: onGoingTask, hoursWorked: hours, minutesWorked: minutes });
 
             if (res.status === 200) {
                 console.log('Worked time updated successfully');
