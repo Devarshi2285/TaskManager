@@ -1,4 +1,4 @@
-  const http = require('http');
+const http = require('http');
   const express = require('express');
   const cors = require('cors');
   const socketIO = require('socket.io');
@@ -8,7 +8,7 @@
   const fs = require('fs');
   const Employee = require('../Backend/Models/Emplyoee.model');
   const DiscussionObject = require('../Backend/Models/DiscussionObject.model');
-  const connectToDatabase = require('./DBconnect');
+  const connectToDatabase = require('./dbconnect');
   const Message = require('../Backend/Models/Messages.model');
   const app = express();
   const TeamDiscussion = require('./Models/TeamDiscussion.model');
