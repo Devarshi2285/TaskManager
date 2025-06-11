@@ -8,7 +8,7 @@ const validatesignin = require('../Middleware/validatesignin');
 const generateToken = require('../Middleware/generateToken');
 const generaterefreshtoken = require('../Middleware/generaterefreshtoken');
 const authtoken = require('../Middleware/authtoken');
-const encryptPrivateKey = require('../Middleware/encryptPrivateKey');
+const encryptPrivateKey = require('../Middleware/encryptprivatekey.js');
 const generateKeyPair = require('../Middleware/GenerateKeys');
 require('dotenv').config();
 
