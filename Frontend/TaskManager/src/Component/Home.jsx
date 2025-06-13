@@ -18,9 +18,9 @@ function Home() {
       // console.log('Fetched data:', data);
       setUser(data.username);
     } catch (err) {
-      navigate('/signup');
-      console.error('Error fetching profile:', err.message);
+      // Allow user to choose between login and signup on token error
       setError(err.message);
+      navigate('/login'); // Change from '/signup' to '/login' for flexibility
     }
   };
 
