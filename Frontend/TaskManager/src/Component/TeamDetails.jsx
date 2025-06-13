@@ -7,7 +7,6 @@ import customFetch from "../../fetchInstance";
 import LeftNavbar from "../Component/LeftNavbar";
 
 
-
 function TeamDetails() {
   const token = localStorage.getItem('token');
   const { id } = useParams();
@@ -165,7 +164,7 @@ function TeamDetails() {
                               <div className="hover:cursor-pointer">
                                 <div className="w-full rounded-xl bg-black text-white p-2 grid grid-cols-3">
                                   <div className="grid col-span-1"><img className="w-4 pt-1" src="/img/output-onlinepngtools.png" alt="" /></div>
-                                  <div className="grid col-span-2 pr-1"><a className="text-sm" href={`http://localhost:5173/chat/${member.employee?._id}`}>Message</a></div>
+                                  <div className="grid col-span-2 pr-1"><a className="text-sm" href={`${import.meta.env.VITE_FRONTEND_REQ_URI}/chat/${member.employee?._id}`}>Message</a></div>
                                 </div>
                               </div>
                             )}

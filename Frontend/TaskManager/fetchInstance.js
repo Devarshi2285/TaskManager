@@ -17,7 +17,7 @@ const customFetch = async (url, bodyObj) => {
             return { data, status: 200 };
         } else if (res.status === 401) {
             const refreshtoken = localStorage.getItem('refreshtoken');
-            const newResponse = await fetch('http://localhost:3004/auth/token', {
+            const newResponse = await fetch(`${import.meta.env.VITE_SERVER_REQ_URI}/auth/token`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
